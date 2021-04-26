@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="MainMenu" extends="Group">
+
+	<script type="text/brightscript" uri="pkg:/components/MainMenu/MainMenu.brs" />
+	<script type="text/brightscript" uri="pkg:/components/RemoteHandle.brs" />
+	<children>
+		<MarkupGrid
+    		id="MenuGrid"
+			itemComponentName="MenuItem"
+			itemSize="[200,200]"
+        	itemSpacing="[20, 20,20,20]"
+			rowHeights="[200, 200]"
+			columnWidths="[200,200,200]"
+			numColumns="4"
+			numRows="1"
+			translation="[100, 100]"/>
+	</children>
+	
+</component>

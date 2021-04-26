@@ -2,7 +2,35 @@
 
 <!--********** Copyright 2016 Roku Corp.  All Rights Reserved. **********-->
 
-<component name="MainScene" extends="Scene" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
-	<!-- importing main handler -->
+<component name="MainScene" extends="Scene">
     <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+    <script type="text/brightscript" uri="pkg:/components/RemoteHandle.brs" />
+    <children>
+    	  <Rectangle
+			       id = "Background"
+			       translation = "[0, 115]"
+			       color = "0x1A1A1AFF"
+			       width = "1920"
+			       height = "1080"/>
+<!-- The menu to select the options -->
+		    <Header
+			       id="MainMenu"
+			       visible = "false"/>
+<!-- The main video screen with multiple video options -->
+		    <Playlist
+		    	id = "Playlist"
+		    	visible = "false"/>
+<!-- Detail screen of the selected video with access to play  -->
+			<Detail
+				id = "Detail"
+				visible ="false"/>
+<!--  Account screen to login/logout -->
+			<Account
+				id = "Account"
+				visible = "false"/>
+<!--  About the roku app -->
+		    <About
+		    	id = "About"
+		    	visible ="false"/>
+    </children>
 </component>
